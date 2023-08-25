@@ -4,18 +4,12 @@ import { addTodo, checkTodo, deleteTodo, removeTodo } from '../redux/todo_action
 import 'animate.css'; // Import the animate.css library
 import check from '../assest/check.png'
 const Todo = () => {
-
     const [todoText, setTodoText] = useState('')
     const dispatch = useDispatch()
     const list = useSelector(state => state.todoReducers.list)
 
-
     const handleChangeTodoText = (e) => {
-
         setTodoText(e.target.value)
-
-
-
     }
     const handleChangeAddTodo = () => {
         dispatch(addTodo(todoText))
@@ -24,8 +18,8 @@ const Todo = () => {
 
     return (
         <div className='container mt-5'>
- <h1 className='animate__animated animate__fadeOut ' style={{ color: 'greenyellow', animationDelay: '3s' }}> Redux Todo App</h1>
-            <h1 className='animate__animated animate__bounceInDown mb-3' style={{ color: 'yellow', animationDelay: '0s' }}><img src={check} alt='check' className='icon'/>To Do </h1>
+            <h1 className='animate__animated animate__fadeOut ' style={{ color: 'greenyellow', animationDelay: '3s' }}> Redux Todo App</h1>
+            <h1 className='animate__animated animate__bounceInDown mb-3' style={{ color: 'yellow', animationDelay: '0s' }}><img src={check} alt='check' className='icon' />To Do </h1>
             <div className='d-flex justify-content-center align-items-center mb-3'>
                 <div className='container'>
                     <div className='row  justify-content-center align-items-center g-2'>
