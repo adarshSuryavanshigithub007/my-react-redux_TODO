@@ -16,22 +16,26 @@ const todoReducers = (state = initialData, action) => {
                 ]
             }
 
-            case "DELETE_TODO":
-             const newList =  state.list.filter((elem)=>elem.id !== action.id)
-                return {
-                    ...state,
-                    list:newList
-                }
+        case "DELETE_TODO":
+            const newList = state.list.filter((elem) => elem.id !== action.id)
+            return {
+                ...state,
+                list: newList
+            }
 
-                case "REMOVE_TODO":
-                   
-                       return {
-                           ...state,
-                           list:[]
-                       }
+        case "REMOVE_TODO":
 
-                       
-    
+            return {
+                ...state,
+                list: []
+            }
+
+            case "CHECKBOX_TODO":
+                    const updatedState = state.list.map((elem)=>elem.id===action.id?{...elem, checked:action.checked}:elem)
+            return {
+                ...state,
+                    list:updatedState
+            }
 
 
         default: return state;

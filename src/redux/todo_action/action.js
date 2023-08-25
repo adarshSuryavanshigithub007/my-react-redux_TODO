@@ -22,8 +22,10 @@ export const removeTodo = ()=>{
     }
 }
 
-export const checkTodo = ()=>{
+export const checkTodo = (id,checked)=>{
     return{
         type:"CHECKBOX_TODO",
+        id,
+        checked
     }
 }
