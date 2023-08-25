@@ -29,6 +29,8 @@ const todoReducers = (state = initialData, action) => {
                            ...state,
                            list:[]
                        }
+
+                       
     
 
 
