@@ -1,4 +1,32 @@
-# Getting Started with Create React App
+# REACT REDUX TODO-APP
+### `STORE`
+This file defines action types and action creators. Actions are plain JavaScript objects that describe the intention to change the state. Action creators are functions that return these action objects.
+
+### `reducers.js`
+This is where the state management logic resides. You define the initial state and a reducer function that specifies how the state changes in response to actions. 
+
+## `store.js`
+This file creates the Redux store by combining the reducer using the createStore function from Redux.
+
+
+## `Clone the repository to your local machine` 
+this repo (https://github.com/adarshSuryavanshigithub007/my-react-redux_TODO.git)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -14,10 +42,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -68,3 +92,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
